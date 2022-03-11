@@ -1,5 +1,5 @@
 Project structure
-  - One grid div composed of 2 columns, second one 3 times bigger than the first one
+  - One grid div composed of 2 columns, second one 5 times bigger than the first one
     - Sidebar: Grid div with  3 rows, a gap of 20px between them and 3 flexbox containers within these rows
   
   One grid div composed of 2 rows, second one 5 times bigger
