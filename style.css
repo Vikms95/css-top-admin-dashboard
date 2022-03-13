@@ -50,6 +50,7 @@ body{
 
 .header-button{
   background-color: var(--site-blue-);
+  font-weight: 700;
   color: white;
   padding: 1rem;
   border-radius: 10%;
