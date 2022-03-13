@@ -1,5 +1,7 @@
 :root{
   --site-blue-:#0ea5e9; 
+  font-family: 'Roboto', sans-serif;
+
 }
 body{
   margin: 0;
@@ -14,6 +16,7 @@ body{
 
 #sidebar{
   display: grid;
+  gap: 20px;
   grid-template-rows: 1fr 2fr 4fr;
   background-color: var(--site-blue-);
   color: white;
@@ -21,6 +24,7 @@ body{
   font-weight: 700;
   padding:2rem;
 }
+
 
 .bar1{
   display: flex;
@@ -42,6 +46,14 @@ body{
   padding: 2rem;
   grid-template: 1fr 1fr / 1fr 1fr;
   border-bottom: solid .5px var(--site-blue-);
+}
+
+.header-button{
+  background-color: var(--site-blue-);
+  color: white;
+  padding: 1rem;
+  border-radius: 10%;
+  border: none;
 }
 
 .main-content{
