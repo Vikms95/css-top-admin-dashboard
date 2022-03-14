@@ -16,8 +16,9 @@ body{
 
 #sidebar{
   display: grid;
+  height: 100%;
   gap: 20px;
-  grid-template-rows: 1fr 2fr 4fr;
+  grid-template-rows: repeat(3, minmax(30%, 5px));
   background-color: var(--site-blue-);
   color: white;
   font-size: 30px;
@@ -44,7 +45,7 @@ body{
 .header{
   display: grid;
   padding: 2rem;
-  grid-template: repeat(2, minmax(100px, 50%) ) / repeat(2, minmax(100px,50%));
+  grid-template: repeat(2, minmax(100px, 10%) ) / repeat(2, minmax(100px,50%));
   border-bottom: solid .5px var(--site-blue-);
 }
 
@@ -77,6 +78,25 @@ body{
   height: 70px;
   grid-row-start: 1;
   grid-row-end: 3;
+}
+
+.notif{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(2, minmax(80px,100px)) minmax(100px,200px) ;
+  grid-template-rows: 1fr;
+}
+
+
+.notif > img{
+  border-radius: 50%;
+  height: 50px;
+}
+
+.notif-name{
+  font-weight: 900;
 }
 
 .main-content{
