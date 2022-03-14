@@ -36,6 +36,7 @@ body{
 .support,
 .privacy{
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 6fr;
   transition: .5s;
 }
@@ -81,8 +82,9 @@ body{
   display: grid;
   padding: 2rem;
   padding-bottom: 0;
+  padding-top: 0;
   align-items: center;
-  grid-template: repeat(2, minmax(100px, 10%) ) / repeat(2, minmax(100px,50%));
+  grid-template: minmax(80px, 10%) minmax(100px, 10%)  / repeat(2, minmax(100px,50%));
 }
 
 .header-buttons{
@@ -139,7 +141,6 @@ body{
 
 .main-content{
   display: grid;
-  margin-top: -50px;
   padding-top: .5rem;
   grid-template-columns: 2fr 1fr;
   background-color: rgb(233, 233, 233);
@@ -163,7 +164,7 @@ body{
 
 .card{
   display: grid;
-  grid-template-rows: 1fr 10fr 1fr;
+  grid-template-rows: .1fr 2fr 1fr;
   padding: 1rem;
   gap: 1rem;
 
@@ -188,6 +189,10 @@ body{
   background-color: transparent;
   border: none;
   padding: .1rem;
+}
+
+button:hover{
+  cursor: pointer;
 }
 
 .card1,
