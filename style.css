@@ -44,8 +44,15 @@ body{
 .header{
   display: grid;
   padding: 2rem;
-  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-template: repeat(2, minmax(100px, 50%) ) / repeat(2, minmax(100px,50%));
   border-bottom: solid .5px var(--site-blue-);
+}
+
+.header-buttons{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  gap: 50px;
 }
 
 .header-button{
@@ -55,6 +62,21 @@ body{
   padding: 1rem;
   border-radius: 10%;
   border: none;
+}
+
+.intro-wrapper{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 8fr;
+  justify-content:center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.intro-wrapper > img{
+  border-radius: 50%;
+  height: 70px;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .main-content{
