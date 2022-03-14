@@ -156,8 +156,6 @@ body{
   grid-template-columns: 2fr 1fr;
   background-color: rgb(233, 233, 233);
   border-top: solid .5px var(--site-blue-);
-
-
 }
 
 .cards-container{
@@ -220,7 +218,7 @@ button:hover{
 
 .panels-container{
   display: grid;
-  grid-template-rows: 1fr 5fr 1fr 5fr;
+  grid-template-rows: .6fr 5fr .6fr 5fr;
   padding: 1rem;
 
 }
@@ -229,13 +227,24 @@ button:hover{
   display: grid;
   justify-self: center;
   grid-template-rows: repeat(3,1fr);
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: white;
   box-shadow: .1rem .1rem .1rem .1rem rgba(218, 218, 218, 0.5);
   border-radius: 2%;
+  gap: 2rem;
+}
+
+.panel-title{
+  font-weight: 900;
+  align-self: center;
+  padding: 1rem;
 }
 
 .panel-section{
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.section-title{
+  font-weight: 900;
 }
