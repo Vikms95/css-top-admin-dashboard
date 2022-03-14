@@ -6,4 +6,8 @@
     - Header: One grid div composed of 2 rows and 2 columns
     - Main: Grid div with 4 rows (the last 3, 4 times bigger than the first) and 3 columns of equal size -->
 
-- Look into spacing the header and main content
+<!-- - Look into spacing the header and main content
+ -->
+
+ - Add box shadow below header
+ - Add border panel
