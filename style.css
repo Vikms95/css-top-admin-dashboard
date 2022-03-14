@@ -17,10 +17,10 @@ body{
 #sidebar{
   display: grid;
   gap: 20px;
-  grid-template-rows: 5rem repeat(2, minmax(15rem,20rem));
+  grid-template-rows: 5rem repeat(2, minmax(15rem,17rem));
   background-color: var(--site-blue-);
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
   padding:1.5rem;
 }
@@ -84,7 +84,18 @@ body{
   padding-bottom: 0;
   padding-top: 0;
   align-items: center;
-  grid-template: minmax(80px, 10%) minmax(100px, 10%)  / repeat(2, minmax(100px,50%));
+  grid-template: minmax(80px, 10%) minmax(80px, 10%)  / repeat(2, minmax(100px,50%));
+}
+
+.search-wrapper{
+  display: grid;
+  grid-template-columns: 1fr minmax(2rem,90%);
+}
+
+.search-bar{
+  background-color: rgb(209, 208, 208);
+  border: none;
+  border-radius: 20px;
 }
 
 .header-buttons{
