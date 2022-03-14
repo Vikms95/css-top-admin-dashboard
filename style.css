@@ -45,8 +45,9 @@ body{
 .header{
   display: grid;
   padding: 2rem;
+  padding-bottom: 0;
+  align-items: center;
   grid-template: repeat(2, minmax(100px, 10%) ) / repeat(2, minmax(100px,50%));
-  border-bottom: solid .5px var(--site-blue-);
 }
 
 .header-buttons{
@@ -58,10 +59,11 @@ body{
 
 .header-button{
   background-color: var(--site-blue-);
-  font-weight: 700;
   color: white;
-  padding: 1rem;
-  border-radius: 10%;
+  width: 6rem;
+  font-weight: 700;
+  padding: 10px;
+  border-radius: 20px;
   border: none;
 }
 
@@ -76,6 +78,7 @@ body{
 .intro-wrapper > img{
   border-radius: 50%;
   height: 70px;
+  padding: .5rem;
   grid-row-start: 1;
   grid-row-end: 3;
 }
@@ -101,8 +104,11 @@ body{
 
 .main-content{
   display: grid;
+  margin-top: -50px;
   grid-template-columns: 2fr 1fr;
   background-color: rgb(233, 233, 233);
+  border-top: solid .5px var(--site-blue-);
+
 
 }
 
