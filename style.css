@@ -248,3 +248,18 @@ button:hover{
 .section-title{
   font-weight: 900;
 }
+
+.trending-section{
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 8fr;
+  justify-content:center;
+  align-items: center;
+}
+
+.trending-section > img{
+  border-radius: 50%;
+  height: 40px;
+  padding: .5rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
