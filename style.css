@@ -3,15 +3,15 @@
   font-family: 'Roboto', sans-serif;
 
 }
-body{
+html,body{
   margin: 0;
-  height: 100vh;
+  height: 100%;
 }
 
 #container{
   display: grid;
-  height: 100%;
   grid-template-columns: 1fr 5fr;
+  max-height:100%
 }
 
 #sidebar{
@@ -20,9 +20,11 @@ body{
   grid-template-rows: 5rem repeat(2, minmax(15rem,17rem));
   background-color: var(--site-blue-);
   color: white;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: 700;
   padding:1.5rem;
+  max-height: 100%;
+
 }
 
 .title,
@@ -38,7 +40,6 @@ body{
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 6fr;
-  transition: .5s;
 }
 
 .title,
@@ -73,6 +74,7 @@ body{
 #content{
   display: grid;
   grid-template-rows: 1fr 7fr;
+  max-height: 100%;
 }
 
 .header{
@@ -83,6 +85,7 @@ body{
   padding-top: 0;
   align-items: center;
   grid-template: minmax(80px, 10%) minmax(80px, 10%)  / repeat(2, minmax(100px,50%));
+  border-bottom: solid .1rem var(--site-blue-);
 }
 
 .search-wrapper{
@@ -151,7 +154,7 @@ body{
 .main-content{
   display: grid;
   padding-top: .5rem;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2.6fr 1fr;
   background-color: rgb(233, 233, 233);
 }
 
@@ -214,7 +217,7 @@ button:hover{
 
 .panels-container{
   display: grid;
-  grid-template-rows: .6fr 5fr .6fr 5fr;
+  grid-template-rows: 2.5rem 22rem 2.5rem 15rem;
   padding: 1rem;
 
 }
@@ -227,7 +230,7 @@ button:hover{
   background-color: white;
   box-shadow: .1rem .1rem .1rem .1rem rgba(218, 218, 218, 0.5);
   border-radius: 2%;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .panel-title{
@@ -250,6 +253,17 @@ button:hover{
   padding-bottom: 1.5rem;
 }
 
+.trending-panel{
+  display: grid;
+  justify-self: center;
+  align-items: center;
+  grid-template-rows: repeat(4,minmax(3rem,40%));
+  background-color: white;
+  box-shadow: .1rem .1rem .1rem .1rem rgba(218, 218, 218, 0.5);
+  border-radius: 2%;
+  padding:1rem;
+}
+
 .trending-section{
   display: grid;
   grid-template: 1fr 1fr / 1fr 8fr;
@@ -264,3 +278,4 @@ button:hover{
   grid-row-start: 1;
   grid-row-end: 3;
 }
+
